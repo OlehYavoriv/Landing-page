@@ -1,0 +1,364 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+body {
+    font-family: 'Yeseva One', cursive;
+    overflow-y: hidden;
+}
+
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /* border-left: 1px solid black;
+    border-right: 1px solid black; */
+
+}
+
+.header {
+    height: 60px;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px 0 black;
+    z-index: 100;
+
+}
+
+.section {
+    height: 100vh;
+    padding-top: 60px;
+
+}
+
+#home {
+    /* background-color: coral; */
+    background-image: url(../images/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+#Works {
+    /* background-color: darkcyan; */
+    background-image: url(../images/soft.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#About {
+    background-color: ivory;
+}
+
+#Help {
+    background-color: ivory;
+}
+
+#Contact {
+    background: #4AC29A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BDFFF3, #4AC29A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.header-logo {
+    width: 20%;
+    /* background-color: honeydew; */
+}
+
+.header-menu {
+    width: 50%;
+    /* background-color: ivory; */
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-link {
+    text-decoration: none;
+    border-radius: 100px;
+    border-style: none;
+
+}
+
+.menu-link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition-duration: 0.7s;
+    transition-property: transform;
+}
+
+.menu-link:hover {
+    transform: scale(1.2);
+}
+
+.home-title {
+    top: 150px;
+    right: 20px;
+    position: relative;
+    font-size: 70px;
+    color: #fefefe;
+    text-shadow: 1px 1px black;
+}
+
+.about-photo {
+
+    width: 30%;
+    height: 70vh;
+    background: #1f4037;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #99f2c8, #1f4037);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.about-icons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 80px;
+    margin-top: 30px;
+}
+
+.about-info {
+    width: 50%;
+}
+
+.about-info p {
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.works-box {
+    height: 15vw;
+    width: 25vw;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    transition-property: transform, opacity;
+    transition-duration: 0.7s;
+    opacity: 0.7;
+
+}
+
+.works-box:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.img-box {
+    border-radius: 15px;
+}
+
+.help-title h1 {
+    top: 50px;
+    left: 90%;
+    position: relative;
+    font-size: 50px;
+    color: black;
+    text-shadow: 1px 1px white;
+}
+
+.help-title p {
+    text-align: center;
+    top: 90px;
+    left: 90%;
+    position: relative;
+    font-size: 20px;
+    color: black;
+    text-shadow: 1px 1px white;
+}
+
+.help-img {
+    top: 35%;
+    right: 500px;
+    width: 100px;
+    height: 100px;
+    float: right;
+
+    position: absolute;
+
+}
+
+.contact-info {
+
+    position: absolute;
+
+    width: 300px;
+    height: 200px;
+    top: 40%;
+    left: 10%;
+    z-index: 10;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: #4AC29A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BDFFF3, #4AC29A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.contact-info p {
+    font-size: 20px;
+    margin: 8px;
+    font-family: 'Yeseva One', cursive;
+    text-align: left;
+}
+
+.contact-info h1 {
+    font-size: 30px;
+    font-family: 'Yeseva One', cursive;
+
+}
+
+.map {
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+    position: absolute;
+
+
+}
+
+.logo-style {
+    opacity: 1;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.decor {
+    position: relative;
+    max-width: 400px;
+    margin: 50px auto 0;
+    background: tan;
+    border-radius: 30px;
+}
+
+.form-left-decoration,
+.form-right-decoration {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: tan;
+    border-radius: 20px;
+}
+
+.form-left-decoration {
+    bottom: 60px;
+    left: -30px;
+}
+
+.form-right-decoration {
+    top: 60px;
+    right: -30px;
+}
+
+.form-left-decoration:before,
+.form-left-decoration:after,
+.form-right-decoration:before,
+.form-right-decoration:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    background: white;
+}
+
+.form-left-decoration:before {
+    top: -20px;
+}
+
+.form-left-decoration:after {
+    top: 20px;
+    left: 10px;
+}
+
+.form-right-decoration:before {
+    top: -20px;
+    right: 0;
+}
+
+.form-right-decoration:after {
+    top: 20px;
+    right: 10px;
+}
+
+.circle {
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+}
+
+.form-inner {
+    padding: 25px;
+}
+
+.form-inner input,
+.form-inner textarea {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    background: #E9EFF6;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-inner input[type="submit"] {
+    margin-top: 0px;
+    background: #f69a73;
+    border-bottom: 4px solid #d87d56;
+    color: black;
+    font-size: 14px;
+}
+
+.form-inner h3 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #707981;
+}
